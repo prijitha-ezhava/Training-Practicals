@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { TestServiceService } from './test-service.service';
 import { MyappRoutingModule } from './myapp-routing.module';
 import { TwoWayComponent } from './two-way/two-way.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { TwoWayComponent } from './two-way/two-way.component';
    
     HomeComponent,
    
-    TwoWayComponent
+    TwoWayComponent,
+   
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

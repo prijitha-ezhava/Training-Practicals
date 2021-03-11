@@ -1,6 +1,7 @@
 import { HomeComponent } from './home/home.component';
 import { AfterViewInit, Component, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   
   @ViewChild(HomeComponentComponent) homeRef : HomeComponentComponent|any;
 
-  constructor() {
+  constructor(public _router: Router) {
     
   }
   
