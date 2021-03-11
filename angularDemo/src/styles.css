@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    color: #1b4332;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    align-content: center;
+}
+
+body{
+    background-color: #b7e4c7;
+}

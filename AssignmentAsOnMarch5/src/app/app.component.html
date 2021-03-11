@@ -1,0 +1,42 @@
+<body style="background-color: bisque;">
+<h3 style="font-size: 35px; text-align: center;">Angular Assignment </h3>
+<nav style="font-size: larger; text-align: center;">
+    <a class="button"  routerLink ="/home">Home</a> |
+    <a class="button" routerLink ="/about">  About</a>
+</nav>
+<p>Custom Component</p>
+<!-- Parent to Child Data Sharing and vice versa -->
+<app-parent-to-child (outputMsg) = 'outputEvent($event)' [childMsg]="parentMsg"></app-parent-to-child>
+<p>{{childMsg}}</p>
+
+<p>=============================================================================</p>
+<!-- Pipes -->
+<app-pipes-demo></app-pipes-demo>
+<p>Birthdate mentioned in app component is : {{birthdate |date|uppercase}}</p>
+<p>=============================================================================</p>
+<!-- Custom Pipes -->
+ <p> Length of childMsg using Custom Pipe : {{childMsg | customPipes}}</p> 
+ <p>=============================================================================</p>
+<!-- {Property Binding} -->
+<p>Property Binding Example (disabled button)</p>
+<button [disabled] = "IsUnchanged">Disabled Button</button>
+<p>=============================================================================</p>
+<!-- Attribute Binding -->
+
+<p [attr.id] = "pTagAttribute">Attribute binding Example (attr.id)</p>
+<p>=============================================================================</p>
+
+<router-outlet></router-outlet>
+
+
+<app-home #homeComp ></app-home> 
+
+<p>=============================================================================</p>
+<app-home-component #homeRef ></app-home-component>
+
+<!-- home-component -->
+<p>View Child Demo : {{homeRef.name}}</p>
+<p>=============================================================================</p>
+<app-two-way></app-two-way>
+
+</body>
