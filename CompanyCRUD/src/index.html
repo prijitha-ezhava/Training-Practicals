@@ -18,13 +18,17 @@
   <script>
     $(document).ready(function () {
        setTimeout(() => {
-        $('#dataTable').DataTable();
+        $('#dataTable').DataTable({
+          "processing": true,
+          "deferRender": true,
+            "responsive": true
+        });
       }, 700);
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
-  <script src="src/scripts.js"></script>
+  
   <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 </body>

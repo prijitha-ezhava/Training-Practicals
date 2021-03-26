@@ -45,6 +45,13 @@ h3{
 }
 .card{
     padding: 1%;
+    width: auto;
+}
+.divmargin{
+    margin-left:27%;
+}
+.chkbox{
+    size:50px;
 }
 
 .btnsave:hover {opacity: 0.6}

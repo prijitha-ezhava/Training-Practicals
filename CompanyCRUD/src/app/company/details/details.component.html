@@ -1,1 +1,73 @@
-<p>details works!</p>
+<div class="container">
+    <div class="jumbotron">
+        <h3 style="text-align: center; color: #235465;">Company Details</h3>
+
+        <div class="form-group row">
+            <label class=" control-label col-md-4">Name</label>
+            <div class="col-md-6">
+            <div class="col-8" >
+                <p>{{companyobj.name}}</p>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class=" control-label col-md-4">Email Id</label>
+            <div class="col-md-6">
+            <div class="col-8" >
+                <p>{{companyobj.email}}</p>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class=" control-label col-md-4">Address</label>
+            <div class="col-md-6">
+            <div class="col-8" >
+                <p>{{companyobj.address}}</p>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class=" control-label col-md-4">Total Employees</label>
+            <div class="col-md-6">
+            <div class="col-8" >
+                <p>{{companyobj.totalEmployee}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card mb-2" style="margin:5%;">
+    <div class="card-header" style="background-color: #235465;color: white;">
+        <i class="fa fa-list"></i>
+        Company Branches 
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="auto" cellspacing="0">
+        <thead>
+            <tr>
+                <th style="width: auto;">Branch Id</th>
+                <th style="width: auto;">Branch Name</th>
+                <th style="width: auto;">Branch Address</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th style="width: auto;">#</th>
+                <th style="width: auto;">Branch Name</th>
+                <th style="width: auto;">Branch Address</th>
+                <!-- <th>Branch Id</th>
+                <th>Branch Name</th>
+                <th>Branch Address</th> -->
+               
+        </tfoot>
+        <tbody>
+            <tr *ngFor="let branch of companyobj.C">
+                <td>{{branch.branchId}</td>
+                <td>{{branch.branchName}}</td>
+                <td>{{branch.branchAddress}}</td>      
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>

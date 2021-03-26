@@ -15,7 +15,7 @@
                         <th style="width: auto;">Address</th>
                         <th>Employees</th>
                         <th style="width: auto;">Active</th>
-                        <th style="width: auto;">Branches</th>
+                        <th style="width: 10px;">Branches</th>
                         <!-- <th>Branch Id</th>
                         <th>Branch Name</th>
                         <th>Branch Address</th> -->
@@ -27,10 +27,10 @@
                         <th style="width: auto;">#</th>
                         <th style="width: 40px;">Name</th>
                         <th style="width: auto;">Email</th>
-                        <th style="width: 40px;">Address</th>
+                        <th style="width: 30px; padding:1%;">Address</th>
                         <th>Employees</th>
                         <th style="width: auto;">Active</th>
-                        <th style="width: 40px;">Branches</th>
+                        <th style="width: 20px;">Branches</th>
                         <!-- <th>Branch Id</th>
                         <th>Branch Name</th>
                         <th>Branch Address</th> -->
@@ -49,10 +49,12 @@
                         <td>{{company.branchName}}</td>
                         <td>{{company.branchAddress}}</td> -->
                         <td>
-                            <button (click)="editData(company)" class="btn btn-primary btn-sm"><i
-                                    class="fa fa-pencil"></i>Edit</button>&nbsp;
-                            <button (click)="deleteData(company)" class="btn btn-danger btn-sm"><i
-                                    class="fa fa-trash"></i>Delete</button>
+                            <a (click)="editData(company)" class="btnedit"><i
+                                    class="fa fa-pencil"></i></a> |
+                            <a (click)="deleteData(company)" class="btndelete"><i
+                                    class="fa fa-trash"></i></a> | 
+                            <a (click)="detailData(company)" class="btninfo"><i
+                                        class="fa fa-info"></i></a>
                         </td>
                     </tr>
                 </tbody>

@@ -1,9 +1,10 @@
-import { ICompany } from './icompany';
+import { Company } from './icompany';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import {  Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+
 
 
 @Injectable({
@@ -20,33 +21,36 @@ export class CrudService {
   constructor(private httpClient : HttpClient) { }
 
   //Add new Company
-  create(company: any) : Observable<ICompany>{
+  create(company: any) : Observable<Company>{
+    debugger;
     company.totalBranch = company.companyBranch.length;
-    return this.httpClient.post<ICompany>(this.apiServer +'/companies/',JSON.stringify(company), this.httpOptions)
+    return this.httpClient.post<Company>(this.apiServer +'/companies/',JSON.stringify(company), this.httpOptions)
     .pipe(catchError(this.errorHandler))
   }
 
   //Get all Companies List
-  getAll(): Observable<ICompany[]>{
-    return this.httpClient.get<ICompany[]>(this.apiServer + '/companies/')
+  getAll(): Observable<Company[]>{
+    return this.httpClient.get<Company[]>(this.apiServer + '/companies/')
     .pipe(catchError(this.errorHandler))
   }
 
   //Get Company by ID
-  getById(id: string) : Observable<ICompany>{
-    return this.httpClient.get<ICompany>(this.apiServer + '/companies/' +id)
+  getById(id: any) : Observable<Company>{
+    return this.httpClient.get<Company>(this.apiServer + '/companies/' +id)
     .pipe(catchError(this.errorHandler))
   }
 
   //Edit or Update Company Details
-  update(id: string, company: any) : Observable<ICompany>{
-    return this.httpClient.put<ICompany>(this.apiServer + '/companies/' + id, JSON.stringify(company) ,this.httpOptions)
-    .pipe(catchError(this.errorHandler))
+  update(company: Company) {
+    return this.httpClient.put<Company>(this.apiServer + '/companies/' + company.id, JSON.stringify(company), this.httpOptions)
+    .pipe(
+      catchError(this.errorHandler)
+    )
   } 
 
   //Delete Company data
-  delete(id: number) : Observable<ICompany>{
-    return this.httpClient.delete<ICompany>(this.apiServer + '/companies/' +id, this.httpOptions)
+  delete(id: number) : Observable<Company>{
+    return this.httpClient.delete<Company>(this.apiServer + '/companies/' +id, this.httpOptions)
     .pipe(catchError(this.errorHandler))
   }
 

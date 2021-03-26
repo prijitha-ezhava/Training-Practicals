@@ -2,59 +2,409 @@
   "companies": [
     {
       "id": 1,
-      "email": "gatewaycorp@thegatewaycorp.com",
+      "email": "gtl@thegatewaycorp.com",
       "name": "Gateway Group of Companies",
       "totalEmployee": 1000,
       "address": "Ahmedabad",
-      "isCompanyActive": true,
-      "totalBranch": 16,
-      "companyBranch": [
-        {
-          "branchId": 1,
-          "branchName": "Corporate House",
-          "branchAddress": "Bodakdev"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "email": "waytoweb@gmail.com",
-      "name": "WayToWeb",
-      "totalEmployee": 100,
-      "address": "Panchvati, Ahmedabad",
-      "isCompanyActive": true,
-      "totalBranch": "3",
-      "companyBranch": [
-        {
-          "branchId": 1,
-          "branchName": "",
-          "branchAddress": ""
-        },
-        {
-          "branchId": "",
-          "branchName": "",
-          "branchAddress": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "email": "hyperlink@gmail.com",
-      "name": "HyperLink",
-      "totalEmployee": 120,
-      "address": "Nirma University, Ahmedabad",
       "isCompanyActive": true,
       "totalBranch": 2,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "",
-          "branchAddress": ""
+          "branchName": "Corporate House",
+          "branchAddress": "Bodakdev"
         },
         {
-          "branchId": "",
-          "branchName": "",
+          "branchId": 2,
+          "branchName": "Mindspace",
+          "branchAddress": "Gandhinagar"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "email": "waytoweb@gmail.com",
+      "name": "WayToWeb",
+      "totalEmployee": 100,
+      "address": "Panchvati, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "WTW1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "WTW2",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "email": "hyperlink@gmail.com",
+      "name": "HyperLink",
+      "totalEmployee": 120,
+      "address": "Nirma University, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 3,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "HPL-One",
+          "branchAddress": "Vadodara"
+        },
+        {
+          "branchId": 2,
+          "branchName": "HPL-Two",
+          "branchAddress": "Mumbai"
+        },
+        {
+          "branchId": 3,
+          "branchName": "HPL-Three",
+          "branchAddress": "Anand"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "email": "mykersoltechnologies@gmail.com",
+      "name": "Mykersol Technologies",
+      "totalEmployee": 200,
+      "address": "Baroda",
+      "isCompanyActive": false,
+      "totalBranch": 1,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "Mykersol",
+          "branchAddress": "Baroda"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "email": "silverwingtechnolgies@gmail.com",
+      "name": "Silverwing Technologies",
+      "totalEmployee": 300,
+      "address": "Pakwan, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 4,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "SW",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "SW-II",
+          "branchAddress": "Delhi"
+        },
+        {
+          "branchId": 3,
+          "branchName": "SW-III",
+          "branchAddress": "Pune"
+        },
+        {
+          "branchId": 4,
+          "branchName": "SW-IV",
+          "branchAddress": "Kolkata"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "email": "communicationcrafts@cc.co.in",
+      "name": "Communication Crafts",
+      "totalEmployee": 300,
+      "address": "Panchavati, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 5,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "CC-I",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "CC-II",
+          "branchAddress": "Bangalore"
+        },
+        {
+          "branchId": 3,
+          "branchName": "CC-III",
+          "branchAddress": "Nagpur"
+        },
+        {
+          "branchId": 4,
+          "branchName": "CC-IV",
+          "branchAddress": "Anand"
+        },
+        {
+          "branchId": 5,
+          "branchName": "CC-V",
+          "branchAddress": "Bhopal"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "email": "surekhasolutions@yudizsolutions.co.in",
+      "name": "Surekha Solutions Pvt. Ltd.",
+      "totalEmployee": 600,
+      "address": "Nirma University, Ahmedabad",
+      "isCompanyActive": false,
+      "totalBranch": 4,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "SSPL-1",
+          "branchAddress": "Trivandrum"
+        },
+        {
+          "branchId": 2,
+          "branchName": "SSPL-II",
+          "branchAddress": "Delhi"
+        },
+        {
+          "branchId": 3,
+          "branchName": "SSPL-III",
+          "branchAddress": "Jaipur"
+        },
+        {
+          "branchId": 2,
+          "branchName": "SSPL-IV",
           "branchAddress": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "email": "infosis@infosis.co.in",
+      "name": "Infosis",
+      "totalEmployee": 10000,
+      "address": "Bangalore",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "Infosis-I",
+          "branchAddress": "Bangalore"
+        },
+        {
+          "branchId": 2,
+          "branchName": "Infosis-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "email": "hcltechnologies@yahoo.com",
+      "name": "HCL Technologies",
+      "totalEmployee": 400,
+      "address": "Noida, Uttar Pradesh",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "HCL-I",
+          "branchAddress": "Noida"
+        },
+        {
+          "branchId": 2,
+          "branchName": "HCL-II",
+          "branchAddress": "Delhi"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "email": "wipro@gmail.co.in",
+      "name": "Larsen & Toubro Infotech Ltd",
+      "totalEmployee": 31437,
+      "address": "Mumbai, Maharashtra",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "Wipro-India",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "email": " info@itservicesindia.com",
+      "name": "IT Services India",
+      "totalEmployee": 45215,
+      "address": "Bodakdev, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "IT Services",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "email": "yudizsolutions@yudizsolutions.co.in",
+      "name": "Yudiz Solutions Pvt. Ltd.",
+      "totalEmployee": 400,
+      "address": "Prahaladnagar, Ahmedabad",
+      "isCompanyActive": true,
+      "totalBranch": 2,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "YS-1",
+          "branchAddress": "Ahmedabad"
+        },
+        {
+          "branchId": 2,
+          "branchName": "YS-II",
+          "branchAddress": "Pune"
         }
       ]
     }

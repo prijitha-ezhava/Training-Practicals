@@ -1,5 +1,5 @@
 import { CrudService } from './../crud.service';
-import { ICompany } from './../icompany';
+import { Company } from './../icompany';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -10,23 +10,23 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  companies : ICompany[] = [];
+  companies : Company[] = [];
 
   constructor(public crudService: CrudService, private router : Router) { }
 
   ngOnInit(): void {  
 
     // subscribing getAll() to retrieve all companies data
-    this.crudService.getAll().subscribe((data : ICompany[])=>{
+    this.crudService.getAll().subscribe((data : Company[])=>{
       console.log(data);
       this.companies = data;
   })
   }
 
   //delete button click event method
-  deleteData(company:ICompany){
+  deleteData(company:Company){
     this.crudService.delete(company.id).subscribe(data=>{
-      this.crudService.getAll().subscribe((data:ICompany[])=>{
+      this.crudService.getAll().subscribe((data:Company[])=>{
         this.companies=data;
       });
     });
@@ -34,11 +34,17 @@ export class HomeComponent implements OnInit {
 
 
   //Edit button click event method
-  editData(company:ICompany):void{
+  editData(company:Company):void{
     localStorage.removeItem('companyId');
     localStorage.setItem('companyId', company.id.toString());
     this.router.navigate(['update']);
   }
 
+  //
+  detailData(company :Company):void{
+    localStorage.removeItem('companyId');
+    localStorage.setItem('companyId', company.id.toString());
+    this.router.navigate(['details']);
+  }
   
 }

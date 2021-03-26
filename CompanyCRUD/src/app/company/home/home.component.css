@@ -7,3 +7,13 @@ tfoot{
     background-color: black;
     color: white;
 }
+.btnedit{
+    color:#0096c7;
+    justify-items: center;
+}
+.btndelete{
+    color: crimson;
+}
+.btninfo{
+    color: darkcyan;
+}

@@ -1,3 +1,4 @@
+import { CompanyBranch } from './../icompany';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CrudService } from './../crud.service';
 import { Component, OnInit } from '@angular/core';
@@ -30,12 +31,13 @@ export class CreateComponent implements OnInit {
 
   createItem(): FormGroup {
     return this.formBuilder.group({
-      branchId:'',
-      branchName: '',
-      branchAddress: ''
+      branchId: new FormControl('',[Validators.required]),
+      branchName: new FormControl('',[Validators.required]),
+      branchAddress: new FormControl('',[Validators.required])
     });
   }
   addBranch(): void {
+    debugger;
     this.companyBranch = this.form.get('companyBranch') as FormArray;
     this.companyBranch.push(this.createItem());
   }
@@ -52,7 +54,9 @@ export class CreateComponent implements OnInit {
   }
 
   onSubmit() {
+
     console.log('Create fire');
+    debugger;
     this.crudService.create(this.form.value)
       .subscribe(data => {
         this.router.navigate(['home']);
