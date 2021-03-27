@@ -4,7 +4,7 @@
       "id": 1,
       "email": "gtl@thegatewaycorp.com",
       "name": "Gateway Group of Companies",
-      "totalEmployee": 1000,
+      "totalEmployee": 10000,
       "address": "Ahmedabad",
       "isCompanyActive": true,
       "totalBranch": 2,
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 17,
       "email": "waytoweb@gmail.com",
       "name": "WayToWeb",
       "totalEmployee": 100,
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 16,
       "email": "hyperlink@gmail.com",
       "name": "HyperLink",
       "totalEmployee": 120,
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 15,
       "email": "mykersoltechnologies@gmail.com",
       "name": "Mykersol Technologies",
       "totalEmployee": 200,
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 14,
       "email": "silverwingtechnolgies@gmail.com",
       "name": "Silverwing Technologies",
       "totalEmployee": 300,
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 13,
       "email": "yudizsolutions@yudizsolutions.co.in",
       "name": "Yudiz Solutions Pvt. Ltd.",
       "totalEmployee": 400,
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 12,
       "email": "communicationcrafts@cc.co.in",
       "name": "Communication Crafts",
       "totalEmployee": 300,
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 11,
       "email": "surekhasolutions@yudizsolutions.co.in",
       "name": "Surekha Solutions Pvt. Ltd.",
       "totalEmployee": 600,
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "email": "infosis@infosis.co.in",
       "name": "Infosis",
       "totalEmployee": 10000,
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "email": "hcltechnologies@yahoo.com",
       "name": "HCL Technologies",
       "totalEmployee": 400,
@@ -246,7 +246,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 8,
       "email": "wipro@gmail.co.in",
       "name": "Larsen & Toubro Infotech Ltd",
       "totalEmployee": 31437,
@@ -262,7 +262,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 7,
       "email": " info@itservicesindia.com",
       "name": "IT Services India",
       "totalEmployee": 45215,
@@ -283,128 +283,198 @@
       ]
     },
     {
-      "id": 13,
-      "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "id":6,
+      "email": "accelfrontline@accelfrontline.co.in",
+      "name": "Accel Frontline",
+      "totalEmployee": 7540,
+      "address": "Chennai",
       "isCompanyActive": true,
-      "totalBranch": 2,
+      "totalBranch": 4,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
-          "branchAddress": "Ahmedabad"
+          "branchName": "AFL-1",
+          "branchAddress": "Bangalore"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
-          "branchAddress": "Pune"
+          "branchName": "AFL-II",
+          "branchAddress": "Chennai"
+        },
+        {
+          "branchId": 2,
+          "branchName": "AFL-III",
+          "branchAddress": "Kolkata"
+        },
+        {
+          "branchId": 2,
+          "branchName": "AFL-IV",
+          "branchAddress": "Delhi"
         }
       ]
     },
     {
-      "id": 14,
-      "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "id": 5,
+      "email": "threeiintotech@threeiintotech.co.in",
+      "name": "3i Infotech",
+      "totalEmployee": 5200,
+      "address": "Mumbai",
       "isCompanyActive": true,
-      "totalBranch": 2,
+      "totalBranch": 4,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
-          "branchAddress": "Ahmedabad"
+          "branchName": "3iI-1",
+          "branchAddress": "Bangalore"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
-          "branchAddress": "Pune"
+          "branchName": "3iI-II",
+          "branchAddress": "Mumbai"
+        },
+        {
+          "branchId": 3,
+          "branchName": "3iI-II",
+          "branchAddress": "Noida"
+        },
+        {
+          "branchId": 4,
+          "branchName": "3iI-II",
+          "branchAddress": "Hyderabad"
         }
       ]
     },
     {
-      "id": 15,
+      "id": 4,
       "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "name": "Sasken Technologies",
+      "totalEmployee": 45210,
+      "address": "Bangalore",
       "isCompanyActive": true,
-      "totalBranch": 2,
+      "totalBranch": 3,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
-          "branchAddress": "Ahmedabad"
+          "branchName": "ST-I",
+          "branchAddress": "Pune"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
-          "branchAddress": "Pune"
+          "branchName": "ST-II",
+          "branchAddress": "Chennai"
+        },
+        {
+          "branchId": 3,
+          "branchName": "ST-III",
+          "branchAddress": "Bangalore"
         }
       ]
     },
     {
-      "id": 16,
+      "id": 3,
       "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "name": "UST Global",
+      "totalEmployee": 856325,
+      "address": "Aliso Viejo, California",
       "isCompanyActive": true,
       "totalBranch": 2,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
-          "branchAddress": "Ahmedabad"
+          "branchName": "USTG-1",
+          "branchAddress": "Kochi"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
-          "branchAddress": "Pune"
+          "branchName": "USTG-II",
+          "branchAddress": "Thiruvananthapuram"
         }
       ]
     },
     {
-      "id": 17,
-      "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "id": 2,
+      "email": "persistentsystems@persistentsystems.co.in",
+      "name": "Persistent Systems",
+      "totalEmployee": 356589,
+      "address": "Goa",
       "isCompanyActive": true,
-      "totalBranch": 2,
+      "totalBranch": 5,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
-          "branchAddress": "Ahmedabad"
+          "branchName": "PS-I",
+          "branchAddress": "Bangalore"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
+          "branchName": "PS-II",
+          "branchAddress": "Hyderabad"
+        },
+        {
+          "branchId": 3,
+          "branchName": "PS-III",
+          "branchAddress": "Nagpur"
+        },
+        {
+          "branchId": 4,
+          "branchName": "PS-IV",
+          "branchAddress": "Goa"
+        },
+        {
+          "branchId": 5,
+          "branchName": "PS-V",
           "branchAddress": "Pune"
         }
       ]
     },
     {
       "id": 18,
-      "email": "yudizsolutions@yudizsolutions.co.in",
-      "name": "Yudiz Solutions Pvt. Ltd.",
-      "totalEmployee": 400,
-      "address": "Prahaladnagar, Ahmedabad",
+      "email": "microsoft@microsoft.com",
+      "name": "Microsoft",
+      "totalEmployee": 8045212,
+      "address": "Hyderabad",
       "isCompanyActive": true,
-      "totalBranch": 2,
+      "totalBranch": 8,
       "companyBranch": [
         {
           "branchId": 1,
-          "branchName": "YS-1",
+          "branchName": "MS-1",
           "branchAddress": "Ahmedabad"
         },
         {
           "branchId": 2,
-          "branchName": "YS-II",
-          "branchAddress": "Pune"
+          "branchName": "MS-II",
+          "branchAddress": "Bangalore"
+        },
+        {
+          "branchId": 3,
+          "branchName": "MS-III",
+          "branchAddress": "Gurgaon"
+        },
+        {
+          "branchId": 4,
+          "branchName": "MS-IV",
+          "branchAddress": "New Delhi"
+        },
+        {
+          "branchId": 5,
+          "branchName": "MS-V",
+          "branchAddress": "Chennai"
+        },
+        {
+          "branchId": 6,
+          "branchName": "MS-VI",
+          "branchAddress": "Kochi"
+        },
+        {
+          "branchId": 7,
+          "branchName": "MS-VII",
+          "branchAddress": "Kolkata"
+        },
+        {
+          "branchId": 8,
+          "branchName": "MS-VIII",
+          "branchAddress": "Mumbai"
         }
       ]
     }

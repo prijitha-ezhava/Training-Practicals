@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   })
   }
 
-  //delete button click event method
+  //delete click event method
   deleteData(company:Company){
     this.crudService.delete(company.id).subscribe(data=>{
       this.crudService.getAll().subscribe((data:Company[])=>{
@@ -33,14 +33,14 @@ export class HomeComponent implements OnInit {
   };
 
 
-  //Edit button click event method
+  //Edit  click event method
   editData(company:Company):void{
     localStorage.removeItem('companyId');
     localStorage.setItem('companyId', company.id.toString());
     this.router.navigate(['update']);
   }
 
-  //
+  //Detail click event method
   detailData(company :Company):void{
     localStorage.removeItem('companyId');
     localStorage.setItem('companyId', company.id.toString());

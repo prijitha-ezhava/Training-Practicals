@@ -9,17 +9,20 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  companyobj:any
-  branches:any;
+  companyObj:any
+  // branches:any;
   constructor(public crudService: CrudService, private route : ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
-    
-      this.crudService.getById(1).subscribe(data=>{
+
+    // subscribing getById() to retrieve company data by Id
+    let companyID = window.localStorage.getItem("companyId");
+      this.crudService.getById(companyID).subscribe(data=>{
         console.log(data);
-        this.companyobj=data;
-        this.branches=this.companyobj.CompanyBranch;
-        console.log(this.branches);
+        this.companyObj=data;
+        
+        // this.branches=this.companyObj.CompanyBranch;
+        // console.log(this.branches);
       })
   }
 
